@@ -10,8 +10,7 @@ const Login=()=>{
 
     const[loading, setloading]=useState(false)
     const[error, seterror]=useState()
-   const history = useHistory();
-// ...
+
 
 
     
@@ -29,7 +28,7 @@ const Login=()=>{
                 setloading(false);
 
                 localStorage.setItem('currentUser',JSON.stringify(result));
-                history.push('/services');
+               window.location.href='/services'
 
 
               } catch (error) {
