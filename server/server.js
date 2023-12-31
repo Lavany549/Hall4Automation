@@ -74,4 +74,4 @@ app.post("/order/validate", async (req, res) => {
   });
 
 
-app.listen(port, () => console.log('Node server started using nodemon'));
+app.listen(port, () => console.log('Node server started using nodemon',port));
