@@ -1,0 +1,57 @@
+.one{
+    height: 100% !important;
+
+}
+.two{
+    height: 100vh !important;
+}
+.showbtn{
+    
+    display: inline-block;
+    font-size: 1.2em;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2em;
+
+
+}
+.showbtn:hover{
+    text-decoration: none !important;
+    color: white;
+}
+.showbutton {
+    border: 2px solid transparent;
+    border-radius: 2em;
+}
+
+.greenBtn {
+    background-color: rgb(90, 164, 90) !important;
+    padding: 8px 12px;  
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+      /* Set the text color to ensure readability */
+}
+
+.redBtn {
+    background-color: rgb(162, 94, 94) !important;
+    padding: 8px 12px;  
+    /* // Adjust the padding as needed */
+    color: rgb(8, 8, 8);  
+    /* // Set the text color to ensure readability */
+    font-weight: bold;
+}
+
+
+.boxtext{
+    padding: 1em 1em;
+    padding-right: 2em;
+}
+.show{
+    padding: 1em 1em;
+}
+.show-btn{
+    padding-top: 2.1em;
+}

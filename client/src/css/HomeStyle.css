@@ -1,0 +1,192 @@
+.mainSection{
+        padding: 1.5em 0em; 
+        display: flex;
+        /* background-color: #deb887; */
+        justify-content: space-around;
+        align-items: center;
+        background:linear-gradient(90deg, #77a5f0, #be58dd);
+}
+.contentBox{
+        width: 40%;
+        /* background-color: aliceblue; */
+        padding-left: 1em;
+}
+.contentBox h1{
+        font-size: 3.5em;
+        color: #301934;
+        font-family: 'Whisper', cursive;
+        font-weight: bold;
+}
+.contentBox p{
+        font-size: 1.2em;
+        margin: 1.2em 0;
+        font-family: 'Poppins', sans-serif;
+        /* color:#fff;*/
+        font-weight: bolder;
+}
+.btnBox{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+}
+.btn1{
+        border: 2px solid transparent;
+        border-radius: 2em;
+        background-image: linear-gradient(#fff,#c7d9db),radial-gradient(circle at bottom right,purple,orange);
+        background-origin: border-box;
+        background-clip: content-box,border-box;
+}
+.readMore:hover{
+        text-decoration: none !important;
+
+}
+.readMore{
+        display: inline-block;
+        font-size: 1.2em;
+        padding: .5em 1.5em;
+        text-decoration: none;
+        color:black;
+        font-weight: bolder;
+        font-family: 'Poppins', sans-serif;
+}
+
+.imgContainer {
+width: 50%;
+position: relative;
+overflow: hidden; /* Ensure the box-shadow is clipped */
+}
+
+.imgContainer img {
+width: 100%;
+display: block;
+
+}
+
+.mainSection2{
+        padding: 1.5em 0em; 
+        display: flex;
+        /* background-color: #deb887; */
+        justify-content: space-around;
+        align-items: center;
+        background:linear-gradient(90deg, #77a5f0, #be58dd);
+}
+.contentBox2{
+        width: 90%;
+        /* background-color: aliceblue; */
+        padding-left: 2em;
+        padding-right: 4em;
+        padding-top: 5em;
+}
+.contentBox2 p{
+        font-size: 1.2em;
+        margin: 1.2em 0;
+        font-family: 'Poppins', sans-serif;
+        /* color:#fff;*/
+        font-weight: bolder;
+}
+.contentBox2 h1{
+        font-size: 1.5em;
+        color: #301934;
+        font-family: 'Nova Square', sans-serif;
+        
+}
+
+
+.imgContainer2 {
+width: 50%;
+position: relative;
+overflow: hidden; /* Ensure the box-shadow is clipped */
+padding-left: 2em;
+padding-top: 5em;
+}
+
+.imgContainer2 img {
+width: 100%;
+display: block;
+
+}
+        
+
+.mainSection3,.mainSection4{
+        padding: 1.5em 0em; 
+        display: flex;
+        /* background-color: #deb887; */
+        justify-content: space-around;
+        align-items: center;
+        background:linear-gradient(90deg, #77a5f0, #be58dd);
+}
+
+.contentBox3{
+        width: 90%;
+        /* background-color: aliceblue; */
+        padding-left: 3em;
+        padding-top: 3em;
+}
+.contentBox4
+{
+        width: 90%;
+        /* background-color: aliceblue; */
+       
+        
+}
+.contentBox3 p,.contentBox4 p{
+        font-size: 1.2em;
+        margin: 1.2em 0;
+        font-family: 'Poppins', sans-serif;
+        /* color:#fff;*/
+        font-weight: bolder;
+}
+.contentBox3 h1,.contentBox4 h1{
+        font-size: 2em;
+        color: #301934;
+        font-family: 'Nova Square', sans-serif;
+        font-weight: bold;
+}
+.imgContainer3 {
+width: 50%;
+position: relative;
+overflow: hidden; /* Ensure the box-shadow is clipped */
+padding-left: 2em;
+padding-right: 3em;
+padding-top: 5em;
+}
+
+.imgContainer3 img {
+width: 100%;
+display: block;
+
+}
+
+
+/* media queries */
+@media screen and (max-width:900px) {
+        html{
+                font-size: 14px;
+     
+        }
+      }
+ @media screen and (max-width:768px) {
+        .mainSection,.mainSection2,.mainSection3{
+                flex-direction: column;
+        }
+        .contentBox,.contentBox2,.contentBox3{
+                width: 90%;
+                margin: 0 auto;
+        }
+        .contentBox h1,.contentBox2 h1,.contentBox3 h1{
+                font-size: 2rem;
+        }
+        .contentBox p,.contentBox2 p,.contentBox3 p{
+                font-size: 1.1rem;
+        }
+        .imgContainer,.imgContainer2,.imgContainer3{
+                width: 80%;
+        }
+      }
+      @media screen and (max-width:400px) {
+        .imgContainer,.imgContainer2,.imgContainer3{
+                width: 60%;
+        }
+        
+      }

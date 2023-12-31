@@ -1,0 +1,21 @@
+.customColumn{
+    text-align: center !important;
+    align-items: center !important;
+    font-weight: bolder !important;
+    margin: 0.1em 0.1em;
+  }
+  .customColumn1{
+    text-align: center !important;
+    align-items: center !important;
+    font-weight: bolder !important;
+    margin: 0.1em 0.1em !important;
+    padding-top: 0.6em !important;
+    
+  }
+  
+  
+  .selected {
+    background-color: #17f16e !important;
+  }
+  
+  

@@ -1,0 +1,114 @@
+.mainContent{
+    padding: 1.5em 0em; 
+    display: flex;
+    /* background-color: #deb887; */
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(90deg, #77a5f0, #be58dd);
+}
+.ContentBox{
+    width: 55%;
+    /* background-color: aliceblue; */
+    padding-left: 2em;
+    padding-top: 2em;
+    
+}
+.ContentBox h1{
+    font-size:2em;
+    color: #301934;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.ContentBox h2{
+    font-size: 1.2em;
+    color: #301934;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.ContentBox p{
+    font-size: 1em;
+    margin: 1.2em 0;
+    font-family: 'Poppins', sans-serif;
+    /* color:#fff;*/
+    font-weight: bolder;
+}
+
+.imageContainer {
+   
+    width: 40%;
+    position: relative;
+    padding-left: 1em;
+    padding-top: 3em;
+
+}
+
+.imageContainer img {
+    width: 90%;
+    height: 40%;
+    display: block;
+
+}
+.mainContent2{
+    padding: 1.5em 0em; 
+    display: flex;
+    /* background-color: #deb887; */
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(90deg, #77a5f0, #be58dd);
+   
+}
+.ContentBox2{
+    width: 70%;
+    /* background-color: aliceblue; */
+    padding-left: 3em;
+    padding-right: 4em;
+    padding-top: 2em;
+}
+.ContentBox2 p{
+    font-size: 1.2em;
+    margin: 1.2em 0;
+    
+    font-family: 'Poppins', sans-serif;
+    /* color:#fff;*/
+    font-weight: bolder;
+}
+.ContentBox2 h1{
+    font-size:2em;
+    color: #301934;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.imageContainer2 {
+    padding-top: 5em;
+    padding-left: 3em;
+    width: 40%;
+    position: relative;
+
+}
+
+.imageContainer2 img {
+    width: 90%;
+   
+    display: block;
+
+}
+.imageContainer1 {
+    padding-top: 5em;
+    padding-right: 3em;
+    width: 40%;
+    position: relative;
+
+}
+.imageContainer1 img {
+    width: 100%;
+    display: block;
+
+}
+.committee-list li {
+    padding-left: 1em;
+    font-size: 1em;
+    margin: 1.2em 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+  }
+  
