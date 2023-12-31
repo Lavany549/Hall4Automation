@@ -49,6 +49,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+   "proxy": "https://hall4.onrender.com/"
   
 }
