@@ -25,16 +25,16 @@ const App=()=> {
     <div className="mainContainer">
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="about" element={<About />}/>
-      <Route path="services" element={<Services />}/>
-      <Route path="contact" element={<Contact />}/>
-      <Route path="room" element={<Room />}/>
-      <Route path="login" element={<Login />}/>
-      <Route path="loader" element={<Loader />}/>
-      <Route path="register" element={<Register/>}/>
-      <Route path="ResponsiveGrid" element={<ResponsiveGrid/>}/>
-      <Route path="bookings" element={<Bookings/>}/>
-      <Route path="paymentGateway" element={<PaymentGateway/>}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/services" element={<Services />}/>
+      <Route path="/contact" element={<Contact />}/>
+      <Route path="/room" element={<Room />}/>
+      <Route path="/login" element={<Login />}/>
+      <Route path="/loader" element={<Loader />}/>
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/ResponsiveGrid" element={<ResponsiveGrid/>}/>
+      <Route path="/bookings" element={<Bookings/>}/>
+      <Route path="/paymentGateway" element={<PaymentGateway/>}/>
       <Route component={Error}/>
     </Routes>
     </div>
