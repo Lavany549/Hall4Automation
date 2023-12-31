@@ -35,36 +35,39 @@ const Register=()=>{
                     alert('User with the same roll number or email already exists');
                     return;
                 }
+                else{
+                    const user={
+                        name,
+                        email,
+                        rollnum,
+                        password,
+                        cpassword
+                    }
+                    try {
+                        setloading(true)
+                        const response = await axios.post('/api/users/register', user);
+                        // console.log(response.data); // Assuming the data you want is in the response
+                        setloading(false)
+                        setsuccess(true)
+        
+                        setname('')
+                        setemail('')
+                        setpassword('')
+                        setcpassword('')
+                        setrollnum('')
+                      } catch (error) {
+                        console.log(error); // Log the error response
+                        setloading(false);
+                        seterror(true);
+        
+                      }
+                }
             } catch (error) {
                 console.log(error); // Log the error response
                 setloading(false);
                 seterror(true);
             }
-            const user={
-                name,
-                email,
-                rollnum,
-                password,
-                cpassword
-            }
-            try {
-                setloading(true)
-                const response = await axios.post('/api/users/register', user);
-                // console.log(response.data); // Assuming the data you want is in the response
-                setloading(false)
-                setsuccess(true)
-
-                setname('')
-                setemail('')
-                setpassword('')
-                setcpassword('')
-                setrollnum('')
-              } catch (error) {
-                console.log(error); // Log the error response
-                setloading(false);
-                seterror(true);
-
-              }
+            
 
         }
         else{
