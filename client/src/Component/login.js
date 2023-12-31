@@ -25,7 +25,7 @@ const Login=()=>{
                 setloading(false);
 
                 localStorage.setItem('currentUser',JSON.stringify(result));
-                window.location.href='/services'
+                window.location.href='services'
 
 
               } catch (error) {
