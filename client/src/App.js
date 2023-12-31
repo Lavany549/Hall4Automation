@@ -14,6 +14,9 @@ import Register from './Component/register';
 import ResponsiveGrid from './Component/grid';
 import Bookings from './Component/bookings';
 import PaymentGateway from './Component/paymentGateway';
+import Axios from "axios";
+
+Axios.defaults.baseURL = "https://hall4.onrender.com";
 const App=()=> {
   return (
     
