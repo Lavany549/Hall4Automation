@@ -9,7 +9,7 @@ const app = express();
 
 //middlewares
 const corsOptions ={
-  origin: "http://localhost:3000"
+  origin: "https://hall4-frontend.onrender.com"
 }
 
 const dbConfig = require('./DB');
