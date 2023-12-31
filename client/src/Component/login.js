@@ -10,6 +10,10 @@ const Login=()=>{
 
     const[loading, setloading]=useState(false)
     const[error, seterror]=useState()
+   const history = useHistory();
+// ...
+
+
     
     async function login(){
        
@@ -25,7 +29,7 @@ const Login=()=>{
                 setloading(false);
 
                 localStorage.setItem('currentUser',JSON.stringify(result));
-                window.location.href='services'
+                history.push('/services');
 
 
               } catch (error) {
