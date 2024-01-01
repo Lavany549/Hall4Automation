@@ -173,7 +173,7 @@ const ResponsiveGrid = ({ onSelectedRooms }) => {
             const isBooked = rooms[row - 1]?.currentBookings?.some(booking => booking.date === currentDate);
 
 
-            const bgColor = isBooked ? ' #fa253b' : '#C0C0C0';
+            // const bgColor = isBooked ? ' #fa253b' : '#C0C0C0';
 
             const isSelectable = col !== 0 && !isBooked;
             const isSelected = selectedRooms.some(
@@ -183,9 +183,8 @@ const ResponsiveGrid = ({ onSelectedRooms }) => {
             rowColumns.push(
               <div
                 key={col}
-                className={`col-sm customColumn1 ${isSelected ? 'selected' : ''}`}
+                className={`col-sm customColumn1 ${isSelected ? 'selected' : ''}  ${isBooked ? 'booked' : 'not-booked'}`}
                 style={{
-                  backgroundColor: bgColor,
                   cursor: isSelectable ? 'pointer' : 'not-allowed',
                 }}
                 onClick={() => isSelectable && handleCellClick(row, col)}
