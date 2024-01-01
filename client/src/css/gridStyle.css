@@ -1,3 +1,12 @@
+.booked{
+  background-color: #fa253b;
+}
+.not-booked{
+  background-color: #C0C0C0;
+}
+.selected{
+  background-color: #2f724a;
+}
 .container {
   display: flex;
   flex-direction: column;
