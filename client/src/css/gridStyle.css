@@ -32,26 +32,45 @@
 }
 
 /* Additional styles for responsiveness */
-@media (max-width: 767px) {
-  .customColumn,
+@media screen and (max-width:1400px) {
+  .customColumn{
+    font-size: 0.7em;
+    padding: 0.2em;
+  }
   .customColumn1 {
-    font-size: 0.8em;
+    font-size: 1em;
+    padding: 0.2em;
+  }
+  
+}
+@media (max-width: 1100px) {
+  .customColumn{
+    font-size: 0.4em;
+    padding: 0.2em;
+  }
+  .customColumn1 {
+    font-size: 0.5em;
     padding: 0.2em;
   }
 }
 @media screen and (max-width:568px) {
-  .customColumn,
-  .customColumn1 {
-    font-size: 0.6em;
+  .customColumn{
+    font-size: 0.4em;
     padding: 0.2em;
   }
- 
+  .customColumn1 {
+    font-size: 0.5em;
+    padding: 0.2em;
+  }
 }
 @media screen and (max-width:375px) {
-  .customColumn,
-  .customColumn1 {
+  .customColumn{
     font-size: 0.4em;
-    padding: 0.1em;
+    padding: 0.2em;
+  }
+  .customColumn1 {
+    font-size: 0.5em;
+    padding: 0.2em;
   }
   
 }
