@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import axios from 'axios';
 import '../css/RoomStyle.css';
 import { Button, Form } from 'react-bootstrap';
+import Loader from "./Loader";
 
 const Room = () => {
     const user = JSON.parse(localStorage.getItem('currentUser'));
@@ -10,15 +11,16 @@ const Room = () => {
     const [error, seterror] = useState(null);
     const [rooms, setRooms] = useState([]);
     // const [flag, setFlag] = useState(0);
-
-    // console.log(rooms)
+   
 
     const fetchRooms = async () => {
         try {
             setloading(true);
             const rooms = await axios.get('/api/commonrooms/getallrooms');
+            console.log(rooms)
             // Initialize each room with an empty roll number and student name
             // const initializedRooms = rooms.data.map(room => ({ ...room, StudentRollNumber: '', studentName: '' }));
+            
             setRooms(rooms.data);
             setloading(false);
         } catch (error) {
@@ -105,7 +107,9 @@ const Room = () => {
 
     return (
         <div className={`mainSection ${user && user.data.isAdmin ? 'one' : 'two'}`}>
-            <div className="contentBox">
+            {loading?<Loader/>:(
+                <>
+                <div className="contentBox">
                 {rooms.map((room, index) => (
                     <div key={index} className="bs">
                         <div className="box" style={{ display: "flex", whiteSpace: "nowrap", alignItems: "center" }}>
@@ -164,6 +168,10 @@ const Room = () => {
                     </div>
                 ))}
             </div>
+                </>
+
+            )}
+            
         </div>
     );
 };
