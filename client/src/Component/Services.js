@@ -234,7 +234,7 @@ const Services = () => {
 
             (
               <>
-                <div className="container">
+                <div className="container1">
                   <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <h1>Room Booking</h1>
                   </div>
