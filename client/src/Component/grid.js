@@ -224,7 +224,7 @@ const ResponsiveGrid = ({ onSelectedRooms }) => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container1">
         {rooms.length>0 && generateGrid()}
       </div>
 
