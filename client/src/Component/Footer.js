@@ -13,7 +13,7 @@ const Footer = () => {
           <FaLinkedin className="icon1" />
         </div>
         <div className="copyright">
-        <p>Designed and maintained by</p><p><i> Lavanya Sandula and Danish</i></p>
+        <p>Designed and maintained by</p><p><i> Lavanya Sandula and Harish</i></p>
         </div>
         <div className="copyright">
         <p>All rights reserved &copy;</p>
